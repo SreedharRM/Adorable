@@ -44,7 +44,7 @@ export function LandingPage({ onStartCreating }: LandingPageProps) {
       genre: "Puzzle",
       image: "/assets/morph.png",
       creator: "Dev",
-      plays: "8.7k",
+      plays: "New",
       gameUrl: "https://morph-game-ap3x.vercel.app/"
     },
     {
@@ -118,18 +118,22 @@ export function LandingPage({ onStartCreating }: LandingPageProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-8"
           >
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4">
-              <Gamepad2 className="h-12 w-12 text-purple-600" />
-              <h1 className="text-5xl" style={{ color: 'black' }}>GameSpecter</h1>
+            <div className="bg-white/60 backdrop-blur-md rounded-xl p-6 inline-block">
+              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-transparent mb-2">
+                <Gamepad2 className="h-12 w-12 text-orange-600" />
+                <h1 className="text-5xl text-orange-600">GameSpecter</h1>
+              </div>
             </div>
-            <motion.p
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-2xl text-white mb-8"
-            >
-              Create Amazing Games with the Power of AI
-            </motion.p>
+
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="text-2xl text-white"
+              >
+                Create Amazing Games with the Power of AI
+              </motion.p>
+
           </motion.div>
 
           <motion.div

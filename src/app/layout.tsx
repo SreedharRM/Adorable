@@ -6,6 +6,7 @@ import { stackServerApp } from "@/auth/stack-auth";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
 import { cn } from "@/lib/utils";
+import Head from "next/head";   // ⬅️ add this
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,12 +38,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* <head>
+      <Head>
+        {/* Google tag (gtag.js) */}
         <script
-          crossOrigin="anonymous"
-          src="//unpkg.com/react-scan/dist/auto.global.js"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-E84YGY6FLT"
         />
-      </head> */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-E84YGY6FLT');
+            `,
+          }}
+        />
+      </Head>
       <body
         className={cn(
           `${geistSans.variable} ${geistMono.variable} antialiased`
