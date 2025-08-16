@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "GameSpecter",
-  description: "Game BUilding Platform",
+  description: "Game Building Platform",
   manifest: "/manifest.json",
   // viewport: {
   //   width: "device-width",
