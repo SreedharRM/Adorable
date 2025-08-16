@@ -113,10 +113,15 @@ export default function Page() {
                 className="flex items-center gap-3 cursor-pointer"
                 onClick={handleBackToLanding}
               >
-                <div className="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white text-sm">G</span>
-                </div>
-                <span className="text-xl bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                <Image
+                  src="/logo.png"
+                  alt="GameSpecter Logo"
+                  width={32}
+                  height={32}
+                  className="rounded-lg"
+                />
+
+                <span className="text-xl bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                   GameSpecter
                 </span>
               </motion.div>
@@ -148,6 +153,8 @@ export default function Page() {
                 >
                   New Game
                 </button>
+                
+                    <UserButton />
               </nav>
             </div>
           </div>
@@ -188,9 +195,6 @@ export default function Page() {
                     <a href="https://www.freestyle.sh">freestyle.sh</a>
                   </h1>
                   <Image className="dark:invert mx-2" src={LogoSvg} alt="Adorable Logo" width={36} height={36} />
-                  <div className="flex items-center gap-2 flex-1 sm:w-80 justify-end">
-                    <UserButton />
-                  </div>
                 </div>
                 <div className="w-full px-4 sm:px-0 mx-auto flex flex-col items-center">
                   <p className="text-neutral-600 text-center mb-6 text-3xl sm:text-4xl md:text-5xl font-bold">
