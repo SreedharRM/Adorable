@@ -126,7 +126,7 @@ export function LandingPage({ onStartCreating }: LandingPageProps) {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-2xl text-gray-600 mb-8"
+              className="text-2xl text-white mb-8"
             >
               Create Amazing Games with the Power of AI
             </motion.p>
@@ -159,7 +159,7 @@ export function LandingPage({ onStartCreating }: LandingPageProps) {
             <h2 className="text-4xl mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
               Games Made with GameSpecter
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-white">
               See what creators around the world have built
             </p>
           </div>
