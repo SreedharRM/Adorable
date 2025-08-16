@@ -33,16 +33,16 @@ export function LandingPage({ onStartCreating }: LandingPageProps) {
       id: 1,
       title: "YC Sprint Game",
       genre: "2D Platform",
-      image: "https://via.placeholder.com/400x300.png?text=YC+Sprint+Game",
+      image: "/assets/ycimage.png",
       creator: "Dev",
       plays: "New",
       gameUrl: "https://stellar-starship-6f712e.netlify.app/"
     },
     {
       id: 2,
-      title: "Morph Quest",
+      title: "Morph Rescue",
       genre: "Puzzle",
-      image: "https://images.unsplash.com/photo-1465056434232-c4c1f572b483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      image: "/assets/morph.png",
       creator: "Dev",
       plays: "8.7k",
       gameUrl: "https://morph-game-ap3x.vercel.app/"
@@ -101,7 +101,7 @@ export function LandingPage({ onStartCreating }: LandingPageProps) {
         loop
         muted
         playsInline
-  className="absolute inset-0 w-full h-full object-cover -z-20"
+        className="inset-0 w-full h-screen object-cover absolute"
       />
 
     <motion.div  
@@ -245,9 +245,9 @@ export function LandingPage({ onStartCreating }: LandingPageProps) {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.4 }}
-          className="px-2"
+          className="px-2 pt-2"
         >
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 mt-12">
             <h2 className="text-4xl mb-4 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
               How It Works
             </h2>

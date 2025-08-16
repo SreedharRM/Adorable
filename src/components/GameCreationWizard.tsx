@@ -462,7 +462,7 @@ export function GameCreationWizard({ onComplete, onBack }: GameCreationWizardPro
             className="px-8 py-4"
           >
             <ArrowLeft className="mr-2 h-5 w-5" />
-            {currentStep === 1 ? 'Back to Dashboard' : 'Previous'}
+            {currentStep === 1 ? 'Back to Home' : 'Previous'}
           </Button>
 
           <Button
